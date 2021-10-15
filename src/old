@@ -1,0 +1,128 @@
+import { useState } from "react";
+import ReactDOM from "react-dom";
+
+function MyResume() {
+  const [res, setRes] = useState({
+    sectionHead: "",
+    sectionContent: ""
+  });
+
+  const aboutMe = () => {
+    return (<>
+      <h3>About Me</h3>
+      <p>A recent MS graduate from the GIT program at Arizona State University. 
+         <br/> I am passionate about cohesive and inclusive design. 
+         <br/>I aim to include more users’ experiences to create robust products.</p>
+      </>);
+  }
+  
+  const headAbt = () => {
+    setRes(previousState => {
+      return { ...previousState, sectionHead: "About Me", sectionContent: 
+      "A recent MS graduate from the GIT program at Arizona State University." + 
+      "\nI am passionate about cohesive and inclusive design. I aim to include more users’ experiences to create robust products. " }
+    });
+  }
+
+  const headEdu = () => {
+    setRes(previousState => {
+      return { ...previousState, sectionHead: "Education", sectionContent:
+      "Arizona State University • 2020" +  
+      "\nMS in Graphic Information Technology" +
+      "\nGPA: 4.00/4.00" +
+      "\nHighlight: Independent Research • May 2020" +
+      "\nConducted research on the curb-cut effect and its impact on the experiences of video game players." +
+      "\nUniversity of Texas at El Paso • 2016" +  
+      "\nBachelor of Computer Science" + 
+      "\nGPA: 3.38/4.00" +
+      "\nHighlight: Presenter • October 2015" +
+      "\nPresented at the Third Annual Interdisciplinary Symposium \“How UTEP Students\’ Actions" + 
+      "Improve Lives: Highlighting Advancements in General Health Promotion and Service to the Disability Community.\”"
+       }
+    });
+  }
+  const headSkills = () => {
+    setRes(previousState => {
+      return { ...previousState, sectionHead: "Skills", sectionContent: 
+      "Design and Wireframing" + 
+      "Proficient in the UX design process: identifying the problem, designing a solution, and delivering the product." +
+      "Tools: Balsamiq, Figma, Adobe Photoshop" +
+      
+      "Programming" + 
+    "Seasoned in Object Oriented Programming  Languages: Java, PHP, HTML" +
+      
+      "Research" +
+      "Experienced in creating surveys, collecting and analyzing data." +
+      "Tool: Qualtrics" +
+      
+      "Project Management" +
+      "Practiced in scheduling and workflows." +
+      "Tools: SmartSheet, Trello, Lucidchart"
+       }
+    });
+  }
+
+  const headExp = () => {
+    setRes(previousState => {
+      return { ...previousState, sectionHead: "Professional Experience", sectionContent:
+      "Head West Photos • Remote" + 
+      "Designer • December 2020—January 21" +
+      "Designed and delivered wireframes and mockups in Figma, according to competitor research and stakeholder interviews, to guide the implementation of a portfolio website." +
+      
+      "Judgment and Decision Making Lab • El Paso" +
+      "Research Assistant • June 2017—September 18" + 
+      "Designed and pilot tested accessible surveys, using Qualtrics, to collect data from blind and" + 
+      "visually impaired individuals for a research project." +  
+      
+      "Designed recruitment material, accessible to those with varying levels of vision, used to recruit participants at conferences." +  
+      
+      "Aided in the qualitative coding of data using thematic analysis to understand participant responses." +
+      
+      "Co-authored IRB proposals and a vignette for a research project."  
+       }
+    });
+  }
+
+  const headAwards = () => {
+    setRes(previousState => {
+      return { ...previousState, sectionHead: "Activities & Awards", sectionContent:
+      "Clarity Design Systems Conference" +
+      "Scholarship Recipient • October 2021" +
+      
+      "AccessSTEM Richard Tapia Conference" +
+      "Scholarship Recipient • September 2020" +
+      
+      "AccessSTEM" + 
+      "Member • July 2020—Present" + 
+      "Participate in research." + 
+      "Attend Zoom seminars." +
+      
+      "University of Texas at El Paso" +
+      "Dean’s List • 2012, 2014"		 }
+    });
+  }
+
+
+  return (
+    <div id = "page">
+        <div id ="resumeHeader">
+          <h1>Carmel Heydarian</h1>
+          <h2>heydarianc@gmail.com • https://carmelheydarian.com </h2>
+        </div>
+        <div id ="buttons">
+        <button className = "btn" id = "aboutMe" onClick={headAbt}>About Me</button>
+        <button className = "btn" id = "edu" onClick={headEdu}>Education</button>
+        <button className = "btn" id = "skill" onClick={headSkills}>Skills</button>
+        <button className = "btn" id = "exp" onClick={headExp}>Professional Experience</button>
+        <button className = "btn" id = "actAwrd" onClick={headAwards}>Activities & Awards</button>
+        </div>
+        <div id = "content"> 
+        <h3 id = "content head"> {res.sectionHead} </h3> 
+          <p id = "main content"> {res.sectionContent} </p>
+          </div>
+      
+      </div>
+  )
+}
+
+ReactDOM.render(<MyResume />, document.getElementById('root'));
