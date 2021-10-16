@@ -12,14 +12,7 @@ function MyResume() {
            <br/>I aim to include more users’ experiences to create robust products.</p>
         </>);
 }
-  const aboutMe = () => {
-    return (<>
-      <h3>About Me</h3>
-      <p>A recent MS graduate from the GIT program at Arizona State University. 
-         <br/> I am passionate about cohesive and inclusive design. 
-         <br/>I aim to include more users’ experiences to create robust products.</p>
-      </>);
-  }
+
 
   return (
     <div id = "page">
