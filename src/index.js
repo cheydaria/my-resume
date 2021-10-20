@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
+import './Style.css'
 
 function MyResume() {
   const [res, setRes] = useState({
@@ -138,7 +139,7 @@ const setAwrd = () => {
         <button className = "btn" id = "exp" onClick={setExp}>Professional Experience</button>
         <button className = "btn" id = "awrd" onClick={setAwrd}>Activities & Awards</button>
         </div>
-        <div>
+        <div id = "content">
           {res.sectionContent}
           </div>
         </div>

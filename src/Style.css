@@ -1,0 +1,33 @@
+#resumeHeader {
+ 
+    /*margin: -10px;*/ 
+    text-align: left;
+    background-color: #797ae3;
+    color: white;
+    font-family: Verdana;
+  }
+
+  /*attempt at reducing the space between my name and contact info
+  #myName {
+    margin: -10px;
+  }
+  #contactInfo {
+      margin:-10px;
+  }
+*/
+
+  .btn {
+    border-style: none;
+    background-color: #797ae3;
+    width: 20%;
+    padding: 15px 32px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  #content { 
+    font-size: 1em;  
+    font-family: Verdana;
+  }
