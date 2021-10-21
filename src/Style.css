@@ -15,23 +15,16 @@
       margin:-10px;
   }
 */
-#cintentArea {
-    column-count: 2;
-}
 
   .btn {
     border-style: none;
     background-color: #797ae3;
-    width: 20%;
+    width: 300px;
     padding: 15px 32px;
     margin-bottom: 20px;
     border-radius: 25px;
     color: white;
-    font-size: 20px;
-   
-  }
-  #buttonBlock{
-    width: 25%;
+    font-size: 22px;
     display: block;
   }
   #content { 

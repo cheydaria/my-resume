@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import 'bootstrap';
-import './Style.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Row,Col} from 'react-bootstrap';
+import "./Style.css"
 
 function MyResume() {
   const [res, setRes] = useState({
@@ -133,7 +134,8 @@ const setAwrd = () => {
           <h1 id = "myName">Carmel Heydarian</h1>
           <h2 id = "contactInfo">heydarianc@gmail.com • https://carmelheydarian.com </h2>
         </div>
-
+        <Row>
+        <Col>  
         <div id ="buttonBlock">
         <button className = "btn" id = "aboutMe" onClick={setAbout}>About Me</button>
         <button className = "btn" id = "skills" onClick={setSkills}>Skills</button>
@@ -141,9 +143,12 @@ const setAwrd = () => {
         <button className = "btn" id = "exp" onClick={setExp}>Professional Experience</button>
         <button className = "btn" id = "awrd" onClick={setAwrd}>Activities & Awards</button>
         </div>
-        <div id = "content">
+        </Col>
+        <Col md = {9}><div id = "content">
           {res.sectionContent}
           </div>
+          </Col>
+          </Row>
         </div>
   )
 }
