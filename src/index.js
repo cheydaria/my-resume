@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap';
 import './Style.css'
 
 function MyResume() {
@@ -129,10 +130,11 @@ const setAwrd = () => {
   return (
     <div id = "page">
         <div id ="resumeHeader">
-          <h1>Carmel Heydarian</h1>
-          <h2>heydarianc@gmail.com • https://carmelheydarian.com </h2>
+          <h1 id = "myName">Carmel Heydarian</h1>
+          <h2 id = "contactInfo">heydarianc@gmail.com • https://carmelheydarian.com </h2>
         </div>
-        <div id ="buttons">
+
+        <div id ="buttonBlock">
         <button className = "btn" id = "aboutMe" onClick={setAbout}>About Me</button>
         <button className = "btn" id = "skills" onClick={setSkills}>Skills</button>
         <button className = "btn" id = "edu" onClick={setEdu}>Education</button>

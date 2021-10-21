@@ -15,6 +15,9 @@
       margin:-10px;
   }
 */
+#cintentArea {
+    column-count: 2;
+}
 
   .btn {
     border-style: none;
@@ -25,6 +28,10 @@
     border-radius: 25px;
     color: white;
     font-size: 20px;
+   
+  }
+  #buttonBlock{
+    width: 25%;
     display: block;
   }
   #content { 
