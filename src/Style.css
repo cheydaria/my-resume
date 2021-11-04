@@ -44,6 +44,8 @@
 
   .btn:active{
     background-color: white;
+    border-style: solid;
+    border-color: #6465bb;
     color: black;
   }
 
