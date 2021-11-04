@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Row,Col} from 'react-bootstrap';
+import {Container,Row,Col} from 'react-bootstrap';
 import "./Style.css"
 
 function MyResume() {
@@ -30,8 +30,8 @@ function SkillsCont () {
   return (<>
     <h3>Skills</h3>
     <h4>Programming</h4>
-    <p>Seasoned in Object Oriented 
-        <br/>Programming Languages: Java, PHP, HTML </p>
+    <p>Well-versed in Object oriented programming 
+    <br/>Languages & Frameworks: Java, HTML, JavaScript, React</p>
     <h4>Design and Wireframing</h4>
     <p>Proficient in the UX design process: identifying the problem, designing a solution, and delivering the product.
     <br/>Tools: Balsamiq, Figma, Adobe Photoshop
@@ -89,7 +89,7 @@ function ExpCont() {
  </p>
  <p>Judgment and Decision Making Lab • El Paso
  <br/><b>Research Assistant • June 2017—September 18</b> 
-Designed and pilot tested accessible surveys, using Qualtrics, to collect data from blind and visually impaired individuals for a research project.
+<br/>Designed and pilot tested accessible surveys, using Qualtrics, to collect data from blind and visually impaired individuals for a research project.
 <br/>Designed recruitment material, accessible to those with varying levels of vision, used to recruit participants at conferences.
 <br/>Aided in the qualitative coding of data using thematic analysis to understand participant responses.
 <br/>Co-authored IRB proposals and a vignette for a research project.
@@ -131,9 +131,10 @@ const setAwrd = () => {
   return (
     <div id = "page">
         <div id ="resumeHeader">
-          <h1 id = "myName">Carmel Heydarian</h1>
-          <h2 id = "contactInfo">heydarianc@gmail.com • https://carmelheydarian.com </h2>
+          <h1 id = "myName" className = "headElem">Carmel Heydarian</h1>
+          <h2 id = "contactInfo" className = "headElem">heydarianc@gmail.com • https://carmelheydarian.com </h2>
         </div>
+        <Container>
         <Row>
         <Col>  
         <div id ="buttonBlock">
@@ -149,6 +150,7 @@ const setAwrd = () => {
           </div>
           </Col>
           </Row>
+          </Container>
         </div>
   )
 }

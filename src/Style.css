@@ -1,20 +1,29 @@
-#resumeHeader {
- 
-    /*margin: -10px;*/ 
+#resumeHeader { 
     text-align: left;
     background-color: #797ae3;
     color: white;
     font-family: Verdana;
   }
 
-  /*attempt at reducing the space between my name and contact info
+
+  .headElem {
+    padding-left: 5%;
+  }
+
   #myName {
-    margin: -10px;
+    padding-top: 1%;
   }
-  #contactInfo {
-      margin:-10px;
+   #contactInfo {
+     padding-bottom: 2%;
   }
-*/
+ 
+  #aboutMe {
+    margin-top: 10%;
+  }
+
+  #content {
+    margin-top: 1%;
+  }
 
   .btn {
     border-style: none;
@@ -27,7 +36,32 @@
     font-size: 22px;
     display: block;
   }
+
+  .btn:hover{
+    background-color: #6465bb;
+    color: white;
+  }
+
+  .btn:active{
+    background-color: white;
+    color: black;
+  }
+
+ p,h4 {
+    font-size: 1.25em;
+    font-family: Verdana;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+  h3,h4 {
+    font-weight: bold;
+  }
+
   #content { 
-    font-size: 1em;  
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 15%;
     font-family: Verdana;
   }
